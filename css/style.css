@@ -5,6 +5,13 @@ body {
   padding: 0 20px;
   line-height: 1.6;
   color: #333;
+
+  /* 背景图片设置 */
+  background-image: url("../assets/images/Gcloud.jpg");
+  background-size: cover;        /* 覆盖整个页面 */
+  background-position: center;   /* 居中 */
+  background-repeat: no-repeat;
+  background-attachment: fixed;  /* 滚动时背景不动 */
 }
 
 header {
