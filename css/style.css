@@ -1,82 +1,100 @@
-/* 全局 */
+/* ===== Global ===== */
 body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  color: #000;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  padding: 0;
   line-height: 1.6;
-  color: #333;
-  background-color: #f5f5f5;
 }
 
-/* 顶部背景区 */
-.hero {
-  height: 60vh;
-  min-height: 400px;
+/* ===== Container ===== */
+.container {
+  width: 1000px;
+  margin: 20px auto;
+}
 
-  background:
-    linear-gradient(
-      rgba(0, 0, 0, 0.55),
-      rgba(0, 0, 0, 0.55)
-    ),
-    url("../assets/images/background.png");
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
+/* ===== Profile ===== */
+.profile {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  gap: 40px;
+  margin-bottom: 15px;
 }
 
-.hero-content {
-  color: #fff;
+.photo img {
+  width: 220px;
+  border: 1px solid #ccc;
 }
 
-.hero h1 {
-  font-size: 3em;
+.info h1 {
+  font-size: 26px;
   margin-bottom: 10px;
 }
 
-.hero p {
-  font-size: 1.2em;
-  opacity: 0.9;
+.info p {
+  font-size: 15px;
 }
 
-/* 主体内容卡片 */
-main {
-  max-width: 900px;
-  margin: -80px auto 40px;
-  padding: 30px;
-
-  background: rgba(255, 255, 255, 0.95);
-  border-radius: 14px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+/* ===== Navigation ===== */
+.nav-bar {
+  background-color: #333;
+  padding: 10px 15px;
+  margin-bottom: 25px;
 }
 
-section {
-  margin-bottom: 30px;
-}
-
-h2 {
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 6px;
-}
-
-/* 链接 */
-a {
-  color: #0066cc;
+.nav-bar a {
+  color: #ffffff;
   text-decoration: none;
+  margin-right: 20px;
+  font-size: 15px;
+}
+
+.nav-bar a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Content ===== */
+.content p {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.call {
+  margin-top: 20px;
+}
+
+.highlight {
+  background-color: #dff5e6;
+  border: 1px solid #6bbf8a;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+/* ===== News ===== */
+h2 {
+  font-size: 20px;
+  margin-top: 35px;
+}
+
+.more {
+  font-size: 14px;
+  color: #cc0000;
+}
+
+.news {
+  padding-left: 20px;
+}
+
+.news li {
+  font-size: 14.5px;
+  margin-bottom: 8px;
+}
+
+/* ===== Links ===== */
+a {
+  color: #990000;
 }
 
 a:hover {
   text-decoration: underline;
-}
-
-/* 页脚 */
-footer {
-  text-align: center;
-  color: #777;
-  font-size: 0.9em;
-  margin-bottom: 20px;
 }
