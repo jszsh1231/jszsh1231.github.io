@@ -42,13 +42,13 @@ table {
 }
 
 .table-figure {
-  width: 100%;
+  width: 80%;
   table-layout: fixed;   /* 关键 */
   border-collapse: collapse;
   }
 
 .table-figure td, th {
-  width: 25%;            /* 两列就 50% / 50% */
+  width: 20%;            /* 两列就 50% / 50% */
   text-align: center;
   font-weight: normal !important;  /* 把TH单元格也设置成normal */
  }
