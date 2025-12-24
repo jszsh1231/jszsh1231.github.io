@@ -11,6 +11,8 @@ body {
   
 }
 
+
+
 h1 {
     font-size: 2em;
     line-height: 1.2;
@@ -44,7 +46,7 @@ table {
 .table-figure {
   width: 80%;
   table-layout: fixed;   /* 关键 */
-  border-collapse: collapse;
+  border-collapse: collapse;  
   }
 
 .table-figure td, th {
