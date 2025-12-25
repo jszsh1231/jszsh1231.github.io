@@ -7,16 +7,13 @@ body {
   color: #000;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
-  
+  line-height: 1.6;  
 }
-
-
 
 h1 {
     font-size: 2em;
     line-height: 1.2;
-    border-bottom: 1px solid #eee;
+    border-bottom: 0px solid #eee;
 }
 h2 {
     font-size: 1.8em;
@@ -32,29 +29,30 @@ h4 { font-size: 1.4rem; }
 h5 { font-size: 1.2rem; }
 h6 { font-size: 1rem; }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  background-image: transparent;    /*可以设置背景图片，或者透明*/
-  background-repeat: repeat;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont,
-               "Segoe UI", "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
-  font-size: 14px;
-  color: #333;
-}
-
 .table-figure {
   width: 80%;
-  table-layout: fixed;   /* 关键 */
-  border-collapse: collapse;  
+  table-layout: fixed;    /* 关键 */
+  margin-left: auto;  /* 居中 */
+  margin-right: auto;
+  border-collapse: collapse;
+  border-color: #777;  
   }
-
-.table-figure td, th {
-  width: 20%;            /* 两列就 50% / 50% */
+.table-figure tr {  
+  border-style:dashed
+ }
+.table-figure th {
+  width: 20%;
   text-align: center;
   font-weight: normal !important;  /* 把TH单元格也设置成normal */
+   border-color: #777;
+   border-style: dashed;  
  }
-
+.table-figure td {
+  width: 20%;
+  text-align: center;
+  border-color: #777;  
+  border-style: dashed;
+ }
 
 /* 页脚 */
 footer {
@@ -62,4 +60,11 @@ footer {
   color: #777;
   font-size: 1.0em;
   margin-bottom: 20px;
+}
+
+header {
+  margin-left: 20px;
+}
+main {
+  margin-left: 20px;
 }
